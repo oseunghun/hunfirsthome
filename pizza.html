@@ -9,10 +9,10 @@
 <body>
     <h1>피자주문하기</h1>
     <hr />
-    <form action="login.php">
-        <p>고객명: <input type="text"></p>
-        <p>전화번호: <input type="text"></p>
-        <p>E-mail: <input type="mail"></p>
+    <form action="login.php" method="get">
+        <p>고객명: <input type="text" name="name"></p>
+        <p>전화번호: <input type="text" name="num"></p>
+        <p>E-mail: <input type="mail" name="mail"></p>
     <fieldset style="width: 300px">
         <legend>피자 사이즈</legend>
         <input type="radio" name="pizza" value="small">Small<br><br>
@@ -21,13 +21,13 @@
     </fieldset>
     <fieldset style="width: 300px">
         <legend>토핑 선택</legend>
-        <input type="checkbox" value="베이컨">베이컨<br><br>
-        <input type="checkbox" value="치즈">치즈<br><br>
-        <input type="checkbox" value="양파">양파<br><br>
-        <input type="checkbox" value="버섯">버섯
+        <input type="checkbox" name="topping" value="베이컨">베이컨<br><br>
+        <input type="checkbox" name="topping" value="치즈">치즈<br><br>
+        <input type="checkbox" name="topping" value="양파">양파<br><br>
+        <input type="checkbox" name="topping" value="버섯">버섯
     </fieldset><br>
 
-    <tr>희망배송시간</tr> <input type="time" value=""><br><br>
+    <tr>희망배송시간</tr> <input type="time" name="time" value=""><br><br>
     <tr>배송시 요청사항</tr> <textarea rows="2" cols="15"></textarea><br><br>
     <p><input type="submit" value="주문하기"> <input type="reset" value="다시 선택하기"></p>
 
