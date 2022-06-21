@@ -1,0 +1,56 @@
+body{
+    padding: 50px;
+    background-color:aliceblue;
+}
+
+header{ padding: 7px;}
+
+header a{text-decoration: none; color:black}
+
+nav{margin-top: 10px; margin-bottom: 20px;}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    letter-spacing: .5em;
+    margin-left: 2em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    line-height: 10em;
+}
+
+aside#l{
+    float: left;
+    width: 14em;
+    margin-right: 20em;
+}
+aside#l ul li{
+    background-color: #3f3f3f;
+    padding: 5px 10px;
+    border-bottom: 1px solid white;
+}
+aside#l ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+aside#l ul li:hover{
+    background-color:darkblue;
+}
+section#y{
+    float: left;
+}
+
+section#r{
+    float: none;
+}
+section#f{
+    float: none;
+}
